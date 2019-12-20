@@ -1,0 +1,64 @@
+body {
+	font-family:Verdana,Arial,Sans;
+	font-size:12px;
+	background:#CCCCCC;
+}
+
+#titre {
+	font-family:Arial;
+	font-size:16px;
+	color:#FF0000;
+}
+
+#listes {
+	display:inline-block;
+}
+
+#image {
+	display:inline-block;
+}
+
+#foot{
+	width:450px;
+	font-family:Arial;
+	font-size:12px;
+}
+
+#regles{
+	font-family:Arial;
+	font-size:12px;
+}
+
+#regles_jeu{
+	font-family:Arial;
+	font-size:12px;
+}
+
+#boutons{
+	position:relative;
+	left:350px;
+}
+
+#accueil{
+	width:450px
+}
+
+#jeu{
+	width:500px
+}
+
+#bilan{
+	width:450px
+}
+
+#ecran{
+	background:#FFFFFF
+}
+
+#Affichage{
+	font-size:20px;
+}
+
+#score_final{
+	font-size:20px;
+}

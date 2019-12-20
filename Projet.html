@@ -1,0 +1,76 @@
+﻿<!--testé sur firefox et chrome-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Bubble Hunt</title>
+<link rel="stylesheet" medio="screen" href="styles.css" type="text/css"/>
+</head>
+<body onmousemove="Deplacement_souris(event);">
+
+
+
+<div id="titre"><p>BUBBLE HUNT</p></div>
+
+<div id="accueil" style="display:block">
+	<div id="image">
+		<img src="garde.png" width="650" height="500">
+	</div>
+	<div id="regles">
+		<p>Bienvenue sur Bubble Hunt! Ce jeu est très simple : pour faire augmenter ton score, éclate les bulles vertes, mais évite les blules noires pour ne pas perdre de vies. Bonne chance !</p>
+	</div>
+	<div id="boutons">
+		<input type="submit" name="boutonJouer" id="boutonJouer" VALUE="Jouer" onclick="jeu()"/>
+	</div>
+</div>
+
+
+
+
+<div id="jeu" style="display:none">
+
+	<div id="Affichage">
+		<div id="score">
+		</div>
+		<div id="niveau">
+		</div>
+		<div id="vies">
+		</div>
+	</div>
+	<canvas id="ecran" width="600" height="470"> <!-- 450x300 me paraissait petit-->
+	</canvas>	
+	<div id="boutons">
+		<input type="submit" name="boutonQuitter" id="boutonQuitter" VALUE="quitter" onclick="quitter()"/>
+	</div>
+</div>
+
+
+
+
+<div id="bilan" style="display:none">
+	<p>GG, bien joué !</p>
+	<div id="score_final">
+	</div>
+	<div id="image2">
+		
+		<img src="bilan.jpg" width="650" height="500">
+	</div>
+	<div id="boutons">
+		<input type="submit" name="boutonrejouer" id="boutonrejouer" VALUE="rejouer" onclick="rejouer()"/>
+		<input type="submit" name="boutonaccueil" id="boutonaccueil2" VALUE="home" onclick="div_vers_div('bilan','accueil')"/>
+	</div>
+</div>
+
+
+
+<script src="code.js"></script>
+
+
+<footer id="foot">
+<p>Projet réalisé dans le cadre du cours de developpement web, INSA de Toulouse.</p>
+</footer>
+
+
+
+</body>
+</html>
